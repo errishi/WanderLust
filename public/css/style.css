@@ -1,0 +1,260 @@
+body {
+    font-family: "Plus Jakarta Sans", sans-serif !important;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container {
+    flex: 1;
+}
+
+/* NavBar */
+.navbar {
+    height: 5rem;
+    background-color: white;
+}
+
+.fa-compass {
+    color: #fe424d;
+    font-size: 2rem;
+}
+
+.nav-link {
+    color: #222222 !important;
+}
+
+/* filter */
+#filters {
+    display: flex;
+    /* flex-wrap: wrap; */
+    align-items: center;
+    justify-content: space-around;
+}
+
+.filters{
+    display: flex;
+    text-align: center;
+}
+
+.filter {
+    text-align: center;
+    margin-right: 2rem;
+    margin-top: 1.5rem;
+    opacity: 0.7;
+}
+
+.filter:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.filter p {
+    font-size: 0.8rem;
+}
+
+.tax-info {
+    display: none;
+}
+
+.tax-toggle {
+    border: 1px solid black;
+    border-radius: 1rem;
+    height: 3.25rem;
+    padding: 1rem;
+    margin-left: 2rem;
+    display: flex;
+    align-items: center;
+}
+
+.tax-toggle input,
+.tax-toggle label {
+    cursor: pointer;
+}
+
+.list-icon{
+    border: 1px solid lightgrey;
+    padding: 0.35rem 0.8rem;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+
+}
+
+@media (min-width: 770px) and (max-width: 1024px) {
+    .filters{
+        display: flex;
+        overflow-x: scroll;
+        width: 63vw;
+    }
+    .list-icon{
+        display: none;
+        margin-left: 2rem;
+    }
+    .tax-toggle{
+        width: 25vw;
+    }
+}
+
+@media (min-width: 430px) and (max-width: 770px) {
+    .filters{
+        display: none;
+    }
+    .list-icon{
+        display: inline;
+        margin-left: 2rem;
+    }
+}
+
+@media (max-width : 430px) {
+    .filters{
+        display: none;
+    }
+    .list-icon{
+        display: inline;
+        margin-left: 2rem;
+    }
+    .tax-toggle{
+        display: none;
+    }
+}
+
+/* Delete btn */
+.binBtn form button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.binBtn form button:hover {
+    border-radius: 50%;
+    transition: all 0.2s ease-in;
+    opacity: 0.5;
+}
+
+/* Footer */
+
+.f-info-links a,
+a {
+    text-decoration: none !important;
+    color: #222222;
+}
+
+.f-info-links a {
+    margin-left: 1rem !important;
+}
+
+.f-info-links a:hover {
+    text-decoration: underline !important;
+}
+
+.f-info-links,
+.f-info-socials,
+.f-info-brand {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.f-info-socials i {
+    cursor: pointer;
+    font-size: 1.2rem;
+    margin-right: 0.8rem;
+}
+
+.f-info {
+    display: flex;
+    background-color: #ebebeb;
+    height: 8rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: space-evenly;
+    text-align: center;
+}
+
+/* Cards */
+
+.listing-card {
+    border: none !important;
+    margin-bottom: 2rem;
+}
+
+.card-img-top {
+    border-radius: 1rem !important;
+    width: 100% !important;
+    object-fit: cover !important;
+}
+
+.card-body {
+    padding: 0 !important;
+}
+
+.card-text {
+    font-weight: 400 !important;
+}
+
+/* Card Effect */
+
+.card-img-overlay {
+    opacity: 0;
+}
+
+.card-img-overlay:hover {
+    opacity: 0.2;
+    background-color: white;
+}
+
+/* New Page */
+
+.add-btn {
+    background-color: #fe424d !important;
+    border: none !important;
+}
+
+/* Show page */
+
+.show-image {
+    height: 30vh;
+}
+
+.btns {
+    display: flex;
+    margin-bottom: 1.2rem;
+}
+
+/* Review */
+
+.card-title span {
+    font-size: 0.6rem !important;
+}
+
+
+/* Map */
+#map {
+    position: relative !important;
+    top: 0;
+    right: 0;
+    left: 10px;
+    bottom: 10px;
+    z-index: 999;
+    width: 100% !important;
+    height: 400px;
+}
+
+.coordinates {
+    background:
+        rgba(0, 0, 0, 0.5);
+    color:
+        #fff;
+    position: absolute;
+    bottom: 40px;
+    left: 10px;
+    padding: 5px 10px;
+    margin: 0;
+    font-size: 11px;
+    line-height: 18px;
+    border-radius: 3px;
+    display: none;
+}
